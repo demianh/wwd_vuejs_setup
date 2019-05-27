@@ -2,6 +2,7 @@
   <div class="home">
     <br><br>
     <h1>{{apstate.name}}</h1>
+    <img alt="Vue logo" src="../assets/logo.png" class="logo">
     <br><br>
     <i class="fa fa-beer"></i>
   </div>
@@ -26,5 +27,8 @@ export default class Home extends Vue {
 <style lang="less">
   .fa {
     font-size: 50px;
+  }
+  .logo {
+    width: 150px;
   }
 </style>
