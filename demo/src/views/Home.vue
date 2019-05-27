@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <br><br>
     <h1>{{appstate.name}}</h1>
     <img alt="Vue logo" src="../assets/logo.png" class="logo">
     <br><br>
@@ -10,23 +9,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue';
 import {IAppState} from "@/store/modules/App"; // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
+@Component({})
 export default class Home extends Vue {
   get appstate(): IAppState {
     return this.$store.state.App;
-  }
-
-  mounted() {
-    this.$axios.get('/api/api.php').then((response) => {
-      console.log(response.data);
-    })
   }
 }
 </script>
