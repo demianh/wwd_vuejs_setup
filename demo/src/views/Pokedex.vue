@@ -16,6 +16,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import {IPokemon} from "@/interfaces/IPokemon";
 
 @Component({})
 export default class Pokedex extends Vue {

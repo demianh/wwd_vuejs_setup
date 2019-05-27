@@ -1,4 +1,4 @@
-interface IPokemon {
+export interface IPokemon {
   __v: number;
   _id: string;
   pkdx_id: number;
