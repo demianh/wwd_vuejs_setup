@@ -2,6 +2,8 @@
   <div class="home">
     <br><br>
     <img alt="Vue logo" src="../assets/logo.png">
+    <br><br>
+    <i class="fa fa-beer"></i>
   </div>
 </template>
 
@@ -16,3 +18,8 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+<style lang="less">
+  .fa {
+    font-size: 50px;
+  }
+</style>
