@@ -22,6 +22,12 @@ export default class Home extends Vue {
   get appstate(): IAppState {
     return this.$store.state.App;
   }
+
+  mounted() {
+    this.$axios.get('/api/api.php').then((response) => {
+      console.log(response.data);
+    })
+  }
 }
 </script>
 <style lang="less">
