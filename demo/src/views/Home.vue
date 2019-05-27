@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <br><br>
-    <h1>{{apstate.name}}</h1>
+    <h1>{{appstate.name}}</h1>
     <img alt="Vue logo" src="../assets/logo.png" class="logo">
     <br><br>
     <i class="fa fa-beer"></i>
